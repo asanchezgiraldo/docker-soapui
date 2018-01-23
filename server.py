@@ -54,7 +54,7 @@ class S(BaseHTTPRequestHandler):
             xml = xml[0]
 
         arguments = ['/opt/SoapUI/bin/testrunner.sh',
-                   '-s"%s"' % suite,
+                   '-r -s"%s"' % suite,
                    '/tmp/soapui-project.xml'];
 
         if properties:
